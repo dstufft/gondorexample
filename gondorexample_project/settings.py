@@ -122,4 +122,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
 )
 
-
+try:
+    from local_settings import *
+except ImportError:
+    pass
